@@ -1,4 +1,4 @@
-# 42 Curse
+# 42 Course
 
 ## Phase 1 - Completed
 
