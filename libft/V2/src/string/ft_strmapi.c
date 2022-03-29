@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 22:12:57 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:34:04 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:45:57 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strmapi(char const *s, char (*f)(UINT, char))
 	char			*new_str;
 
 	if (!s || !f)
-		return (NULL);
+		return ((void *)0);
 	index = 0;
 	size_str = ft_strlen(s);
 	new_str = (char *)ft_calloc(size_str + 1, 1);

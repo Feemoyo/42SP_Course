@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:11:22 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:34:14 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:46:20 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		index;
 
 	if (!s1 || !set)
-		return (NULL);
+		return ((void *)0);
 	f_char = get_f_char((char *)s1, (char *)set);
 	l_char = get_l_char((char *)&s1[ft_strlen(s1) - 1], (char *)set, f_char);
 	new_str = (char *)ft_calloc(get_size(f_char, l_char) + 1, sizeof(char));

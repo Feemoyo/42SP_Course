@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 09:56:34 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:34:49 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:44:18 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static const char	*get_final_ptr(const char *nptr)
 	char	was_found;
 
 	if (!nptr)
-		return (NULL);
+		return ((void *)0);
 	was_found = FALSE;
 	while (ft_isdigit(*nptr))
 	{
@@ -27,7 +27,7 @@ static const char	*get_final_ptr(const char *nptr)
 	if (was_found)
 		return (--nptr);
 	else
-		return (NULL);
+		return ((void *)0);
 }
 
 static int	str_to_number(const char *i_str, const char *f_str, int *is_neg)
@@ -66,7 +66,7 @@ static const char	*is_valid(const char *nptr)
 		|| (*nptr == '+' && ft_isdigit(*(nptr + 1))))
 		return (nptr);
 	else
-		return (NULL);
+		return ((void *)0);
 }
 
 int	ft_atoi(const char *nptr)

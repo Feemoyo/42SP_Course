@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 02:09:37 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:34:28 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:46:32 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static char	*get_newstr(unsigned int start, ULONGLONG size_s, ULONGLONG len)
 {
-	char	*new_str;
+	char		*new_str;
 	ULONGLONG	last_index;
 
 	if (start > size_s)
@@ -36,7 +36,7 @@ char	*ft_substr(char const *s, unsigned int start, ULONGLONG len)
 	char		*new_str;
 
 	if (!s)
-		return (NULL);
+		return ((void *)0);
 	size_s = ft_strlen(s);
 	new_str = get_newstr(start, size_s, len);
 	if (new_str)

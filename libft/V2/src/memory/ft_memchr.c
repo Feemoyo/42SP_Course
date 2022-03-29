@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 12:15:25 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 04:28:19 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:44:57 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_memchr(const void *s, int c, ULONGLONG n)
 		else
 			str++;
 	}
-	return (NULL);
+	return ((void *)0);
 }

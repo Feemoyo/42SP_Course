@@ -6,16 +6,13 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 02:58:26 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/03/09 12:03:26 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:43:43 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# ifndef NULL
-#  define NULL ((void *)0)
-# endif
 # ifndef TRUE
 #  define TRUE 1
 # endif

@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 11:00:19 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:33:55 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:45:49 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char		*new_str;
 
 	if (!s1 || !s2)
-		return (NULL);
+		return ((void *)0);
 	new_str = ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, 1);
 	if (new_str)
 	{

@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 17:37:47 by pyago_ra          #+#    #+#             */
-/*   Updated: 2022/02/18 13:38:40 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:54:06 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substrstr(char *start, char *end)
 	char	aux;
 
 	if (!start || !end)
-		return (NULL);
+		return ((void *)0);
 	aux = (*end);
 	(*end) = '\0';
 	str = ft_substr(start, 0, ft_strlen(start));

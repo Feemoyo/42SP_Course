@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/15 11:15:42 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 04:22:28 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:44:41 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memccpy(void *dest, const void *src, int c, ULONGLONG n)
 			return (_dest);
 		_src++;
 	}
-	return (NULL);
+	return ((void *)0);
 }

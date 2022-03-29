@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 01:45:51 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:33:52 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:45:40 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strdup(const char *s)
 	count = 0;
 	size_s = ft_strlen(s);
 	new_s = (char *)ft_calloc(size_s + 1, sizeof(char));
-	if (new_s != NULL)
+	if (new_s != (void *)0)
 	{
 		while (count < size_s)
 		{

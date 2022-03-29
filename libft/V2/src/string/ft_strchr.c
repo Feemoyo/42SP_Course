@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 08:16:42 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:33:46 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:45:29 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ char	*ft_strchr(const char *s, int c)
 	}
 	if (*s == (c % 256))
 		return ((char *)s);
-	return (NULL);
+	return ((void *)0);
 }

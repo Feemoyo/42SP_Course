@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 07:19:01 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:34:08 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:46:05 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,15 @@ char	*ft_strnstr(const char *big, const char *little, ULONGLONG len)
 	if (size_l == 0)
 		return ((char *)big);
 	if (size_l > ft_strlen(big))
-		return (NULL);
+		return ((void *)0);
 	while (*big && len)
 	{
 		if (size_l > ft_strlen(big) || len < size_l)
-			return (NULL);
+			return ((void *)0);
 		if (ft_strncmp(big, little, size_l) == 0 && len >= size_l)
 			return ((char *)big);
 		big++;
 		len--;
 	}
-	return (NULL);
+	return ((void *)0);
 }

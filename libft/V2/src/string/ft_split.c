@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/26 12:47:43 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/02/03 02:33:38 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/03/29 12:45:16 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ char	**ft_split(char const *s, char c)
 	char		**matrix;
 
 	if (!s)
-		return (NULL);
+		return ((void *)0);
 	aux_s = s;
 	count = 0;
 	matrix = (char **)ft_calloc(count_worlds(s, c), sizeof(char *));
@@ -88,7 +88,7 @@ char	**ft_split(char const *s, char c)
 		}
 		if (*s != '\0')
 			add_str(matrix, s, aux_s, count++);
-		matrix[count] = NULL;
+		matrix[count] = (void *)0;
 	}
 	return (matrix);
 }
