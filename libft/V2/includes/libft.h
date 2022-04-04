@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 02:58:26 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/03/29 12:43:43 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/04/04 17:41:57 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,12 @@ typedef struct s_string
 	unsigned char	*prt;
 	unsigned long	len;
 }	t_string;
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 char		*ft_itoa(int n);
 int			ft_islower(int c);
@@ -92,5 +98,15 @@ char		*ft_strmapi(char const *s, char (*f)(UINT, char));
 char		*ft_substr(char const *s, UINT start, ULONGLONG len);
 char		*ft_strnstr(const char *big, const char *little, ULONGLONG len);
 char		*ft_nreplace(char *_src, char *_old, char *_new, ULONGLONG steps);
+
+void		ft_list_add_back(t_list **lst, t_list *new);
+void		ft_list_add_front(t_list **lst, t_list *new);
+void		ft_list_clear(t_list **lst, void (*del)(void *));
+void		ft_list_del_one(t_list **lst, t_list *target, void (*del)(void *));
+void		ft_list_iter(t_list *lst, void (*f)(void *));
+t_list		*ft_list_last_node(t_list *lst);
+t_list		*ft_list_map(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list		*ft_list_new(void *content);
+ULONGLONG	ft_list_size(t_list *lst);
 
 #endif
