@@ -6,7 +6,7 @@
 /*   By: pyago_ra <yagosousa2512@gmail.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/29 02:58:26 by pyago-ra          #+#    #+#             */
-/*   Updated: 2022/04/04 17:41:57 by pyago_ra         ###   ########.fr       */
+/*   Updated: 2022/04/07 15:03:11 by pyago_ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,14 +99,15 @@ char		*ft_substr(char const *s, UINT start, ULONGLONG len);
 char		*ft_strnstr(const char *big, const char *little, ULONGLONG len);
 char		*ft_nreplace(char *_src, char *_old, char *_new, ULONGLONG steps);
 
+ULONGLONG	ft_node_count(t_list *lst);
+t_list		*ft_node_new(void *content);
+void		ft_node_iter(t_list *lst, void (*f)(void *));
+t_list		*ft_node_map(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
 void		ft_list_add_back(t_list **lst, t_list *new);
 void		ft_list_add_front(t_list **lst, t_list *new);
 void		ft_list_clear(t_list **lst, void (*del)(void *));
 void		ft_list_del_one(t_list **lst, t_list *target, void (*del)(void *));
-void		ft_list_iter(t_list *lst, void (*f)(void *));
 t_list		*ft_list_last_node(t_list *lst);
-t_list		*ft_list_map(t_list *lst, void *(*f)(void *), void (*del)(void *));
-t_list		*ft_list_new(void *content);
-ULONGLONG	ft_list_size(t_list *lst);
 
 #endif
